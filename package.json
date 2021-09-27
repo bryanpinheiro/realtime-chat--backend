@@ -1,11 +1,12 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/server.js",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "nodemon --exec ts-node server.ts"
+    "start:dev": "nodemon --exec ts-node server.ts",
+    "start": "tsc && node ./dist/server.js"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
