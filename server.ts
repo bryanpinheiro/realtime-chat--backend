@@ -15,7 +15,7 @@ app.use(router);
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://bryansouza--chat.herokuapp.com",
+        origin: "https://bryansouza--realtime-chat.vercel.app",
         methods: ["GET", "POST"]
     }
 });
